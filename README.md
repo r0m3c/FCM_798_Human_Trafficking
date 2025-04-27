@@ -135,7 +135,6 @@
 ---
 
 # Claude
-**Description**: If you'd like to run the code on this Repository on your personal system, follow the steps below.
 
 ## Comparing Prompting Styles
 **Description**: In the python file **FCM_798_Human_Trafficking/Claude/compare_prompting_styles.py**, you will find a *Python* script that tests the three Prompting Techniques (Zero-Shot, one-shot, and chain-of-thought prompting) I chose. The code defines a function to compare how different prompting styles (Zero-shot, One-shot, and Chain-of-thought) affect the responses from the Claude API using a chosen **Court case, etc**. It prepares three distinct prompts for Claude and then sends each one to the API. The model’s responses are printed to the console to compare the effectiveness of each prompting technique in extracting the chosen **Indicators**. Follow the steps below to test out the code properly:
