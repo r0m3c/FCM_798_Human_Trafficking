@@ -30,7 +30,7 @@
 - Install a code editor that you'd like to use. I personally used [Visual Studio Code](https://code.visualstudio.com/download). This will allow you to test out the code I've included in this Repository.
 - Since I used [OpenAI](https://platform.openai.com/) and [Claude](https://www.anthropic.com/api), in order to use it's Prompts/API, you will need to have an account on each of the sites, as well as have paid for **Credits** based on how many calls you'd like to make to the API. In short, you'll have to spend money to test out my code.
 - After getting credits for each of the LLMs, make sure you create an **API Key** for each. Save this API key somewhere, as we'll be using them to test the code.
-- Finally, download the 'FCM_798' folder in this Repository, that contains all necessary files I used. Once downloaded, open the 'FCM_798' folder inside your code editor to begin testing the code.
+- Finally, download the 'FCM_798_Human_Trafficking' files in this Repository, that contains all necessary files I used. Once downloaded, open the 'FCM_798_Human_Trafficking' folder inside your code editor to begin testing the code.
 
 ---
 
@@ -122,10 +122,10 @@
 # OpenAI
 
 ## Comparing Prompting Styles
-**Description**: In the python file **FCM_798/OpenAI/compare_prompting_styles.py**, you will find a *Python* script that tests the three Prompting Techniques (Zero-Shot, one-shot, and chain-of-thought prompting) I chose. The code defines a function to compare how different prompting styles (Zero-shot, One-shot, and Chain-of-thought) affect the responses from the OpenAI (GPT) API using a chosen **Court case, etc**. It prepares three distinct prompts for GPT and then sends each one to the API. The model’s responses are printed to the console to compare the effectiveness of each prompting technique in extracting the chosen **Indicators**. Follow the steps below to test out the code properly:
+**Description**: In the python file **FCM_798_Human_Trafficking/OpenAI/compare_prompting_styles.py**, you will find a *Python* script that tests the three Prompting Techniques (Zero-Shot, one-shot, and chain-of-thought prompting) I chose. The code defines a function to compare how different prompting styles (Zero-shot, One-shot, and Chain-of-thought) affect the responses from the OpenAI (GPT) API using a chosen **Court case, etc**. It prepares three distinct prompts for GPT and then sends each one to the API. The model’s responses are printed to the console to compare the effectiveness of each prompting technique in extracting the chosen **Indicators**. Follow the steps below to test out the code properly:
 
 ### Steps
-- Make sure you are in your code Editor in the proper directory (*FCM_798/OpenAI/compare_prompting_styles.py*), and in the proper **terminal** directory.
+- Make sure you are in your code Editor in the proper directory (*FCM_798_Human_Trafficking/OpenAI/compare_prompting_styles.py*), and in the proper **terminal** directory.
 - Then, make sure you run the following command `pip install openai`. This command installs the OpenAI Python package from the Python Package Index (PyPI). This package provides an easy way to interact with OpenAI's models, including GPT-3, GPT-4, DALL·E, Codex, and others, via API calls.
 - Next, locate the `client` variable near the top of the file, and in the string replace it with your ** OpenAI (GPT) api key**
 - Next, locate the `case_text` variable near the bottom of the file, and replace the string with the copy of the text (court cases, etc.) that you'd like to analyze based on the Indicators.
@@ -138,10 +138,10 @@
 **Description**: If you'd like to run the code on this Repository on your personal system, follow the steps below.
 
 ## Comparing Prompting Styles
-**Description**: In the python file **FCM_798/Claude/compare_prompting_styles.py**, you will find a *Python* script that tests the three Prompting Techniques (Zero-Shot, one-shot, and chain-of-thought prompting) I chose. The code defines a function to compare how different prompting styles (Zero-shot, One-shot, and Chain-of-thought) affect the responses from the Claude API using a chosen **Court case, etc**. It prepares three distinct prompts for Claude and then sends each one to the API. The model’s responses are printed to the console to compare the effectiveness of each prompting technique in extracting the chosen **Indicators**. Follow the steps below to test out the code properly:
+**Description**: In the python file **FCM_798_Human_Trafficking/Claude/compare_prompting_styles.py**, you will find a *Python* script that tests the three Prompting Techniques (Zero-Shot, one-shot, and chain-of-thought prompting) I chose. The code defines a function to compare how different prompting styles (Zero-shot, One-shot, and Chain-of-thought) affect the responses from the Claude API using a chosen **Court case, etc**. It prepares three distinct prompts for Claude and then sends each one to the API. The model’s responses are printed to the console to compare the effectiveness of each prompting technique in extracting the chosen **Indicators**. Follow the steps below to test out the code properly:
 
 ### Steps
-- Make sure you are in your code Editor in the proper directory (*FCM_798/Claude/compare_prompting_styles.py*), and in the proper **terminal** directory.
+- Make sure you are in your code Editor in the proper directory (*FCM_798_Human_Trafficking/Claude/compare_prompting_styles.py*), and in the proper **terminal** directory.
 - Then, make sure you run the following command `pip install anthropic`. This command installs the Anthropic Python package from the Python Package Index (PyPI). This package provides an easy way to interact with Anthropic's Claude language models via API calls.
 - Next, locate the `client` variable near the top of the file, and in the string replace it with your ** Claude (Anthropic) api key**
 - Next, locate the `case_text` variable near the bottom of the file, and replace the string with the copy of the text (court cases, etc.) that you'd like to analyze based on the Indicators.
